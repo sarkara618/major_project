@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products - FamilyStore </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        </head>
+    <body>
+        
+        <div class="container">      
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="pic\logo.png" width="125px"></a>
+        </div>
+        <nav>
+        <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="New folder\cart2.png" width="30px" height="30px">
+        <img src="New folder\menu2.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+            
+            </div>
+            </div>
+        
+   <!-----------------single product details--------------->
+        
+        
+        
+       
+        
+        <div class="small container single-product">
+            
+           <div class="row">
+            <div class="col-2">
+               <img src="pic\tools\4.png" width="80%" id="ProductImg">
+                <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="pic\tools\4a.png"width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                    <img src="pic\tools\4b.png"width="100%"class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                    <img src="pic\tools\4c.png"width="100%"class="small-img">
+                    </div>
+             
+                </div>
+                
+                
+                
+                
+               </div>
+               <div class="col-2">
+               <p>Home - Tools</p>
+                   <h1>Bosch GSB 500W 10 RE Professional Tool Kit, MS & Plastic (Blue, Set of 100 Tools)</h1>
+                   <h4>Rs. 3,444</h4>
+                   <input type="number" value="1">
+                   <a href="cart.html" class="btn">Add To Cart</a>
+                   <h3>Product Details <i class="fa fa-indent"></i></h3>
+                   <br>
+                   <p> For any queries please contact Customer Service Number – 1800-425-8665 (Toll free)</p>
+                    <p> 6 months from the date of invoice (Provide invoice copy to claim warranty, Accessories not covered under warranty)</p>
+                    <p> No-load speed : 0 to 2600 rpm</p>
+                    <p> Drilling diameter: 10 millimeters for concrete and masonry; 8 millimeters for steel; 20 millimeters for wood</p>
+                    <p> Material: MS and Plastic</p>
+                    <p> Chuck capacity : 1 to 10 millimeters</p>
+                    <p> Impact rate : 0 to 41600 bpm </p>
+               </div>
+            </div> 
+        </div>
+        
+        
+          
+        
+        
+        
+        
+                   <!----------------footer--------->
+            <div class="footer">
+            <div class="container">
+                <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                    <img src="New folder\playstore4.png">
+                        <img src="New folder\ios.png">
+                    </div>
+                    </div>
+                    <div class="footer-col-2">
+                    <img src="New folder\logo2.png">  
+                    <p>Our purpose is to sustainably make the peasure and benefits of Grocery and Stationery accessible to the many .</p>
+                    </div>
+                    <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                        <li>Coupons</li>
+                       <li>Blog Post</li>
+                       <li>Return Poicy</li>
+                       <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                   <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                       <li>G-Mail</li>
+                       <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020- Easy Tutorials</p>
+                </div>
+            </div>
+            
+            <!------------------js for toggle menu---------------->
+            <script>
+            var MenuItems = document.getElementById("MenuItems");
+                
+                MenuItems.style.maxHeight= "0px";
+                
+               function menutoggle(){
+                  if(MenuItems.style.maxHeight=="0px") 
+                      {
+                          MenuItems.style.maxHeight="200px";
+                      }
+                   else{
+                       MenuItems.style.maxHeight = "0px";
+                   }
+               }
+            </script>
+        
+        
+        <!-------------------js for product gallery--------------->
+        <script>
+        var ProductImg = document.getElementById("ProductImg");
+            var SmallImg = document.getElementsByClassName("small-img");
+            
+            SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+             SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+              SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+        </script>
+        
+       </body>
+</html>      
+         
